@@ -2,16 +2,22 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Banner from './components/Banner'
+import Card from './components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const cards =[
+    {
+      nome: 'Pacote Standart';
+      
+    }
+  ]
 
   return (
     <div className="App">
       <Header/>
       <Banner/>
       <div className="container-cards">
-        <h2>a</h2>
+        <Card/>
       </div>
     </div>
   )
