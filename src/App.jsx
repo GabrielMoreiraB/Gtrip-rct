@@ -7,7 +7,7 @@ import Card from './components/Card'
 function App() {
   const cards =[
     {
-      nome: 'Pacote Standart';
+      nome: 'Pacote Standart',
       
     }
   ]
