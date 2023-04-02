@@ -4,6 +4,8 @@
     border-radius: 20px;
     margin-top: -2em;
     padding: 2em;
+    display: flex;
+    gap: 2em;
 
 
 }

@@ -1,15 +1,16 @@
 import './Card.css';
 
-const Card = ()=> {
+const Card = ({nome, itens, preco, cor})=> {
+    const css = {backgroundColor: cor}
+    console.log(itens)
     return (
-        <div className="card">
-            <h1 className="cart-title">Pacote Standart</h1>
+        <div className="card" style={css}>
+            <h1 className="cart-title">{nome}</h1>
             <ul className="card-ofer">
-                <li>Quarto Standart</li>
-                <li>chek in de 10h as 13h</li>
-                <li>Piscina e sauna</li>
+                {itens.map(item => <li>{item}</li>)}
+                
             </ul>
-            <div className="price"><h3>R$ 280,00 Diária</h3> <h2>Reserve agora</h2></div>
+            <div className="price"><h3>R$ {preco} Diária</h3> <h2>Reserve agora</h2></div>
         </div>
         
     )
