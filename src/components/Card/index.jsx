@@ -1,7 +1,8 @@
 import './Card.css';
 
-const Card = ({nome, itens, preco, cor})=> {
-    const css = {backgroundColor: cor}
+const Card = ({nome, itens, preco, cor, id})=> {
+    const css = {backgroundColor:cor, marginTop: id};
+    const css2 ={}
     console.log(itens)
     return (
         <div className="card" style={css}>
